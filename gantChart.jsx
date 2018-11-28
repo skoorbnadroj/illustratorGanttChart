@@ -68,6 +68,8 @@ function Chart(startDate, endDate, artboard) {
       headerRect.filled = true;
       headerRect.fillColor = gray;
       headerRect.strokeColor = white;
+      headerRect.strokeWidth = 2;
+
       var rectRef = targetLayer.pathItems.rectangle(currentY - rectHeight * 0.4, currentX, w, rectHeight);
       var areaTextRef = targetLayer.textFrames.areaText(rectRef);
       areaTextRef.paragraphs.add(months[current.getMonth()]);
